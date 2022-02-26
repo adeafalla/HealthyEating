@@ -45,8 +45,9 @@ def set_ingredient(ingredient_name):
     
     complete = False
     i = 0
+    print(f"--- {ingredient_name.upper()} ---")
     while not complete:
-        print(i)
+        print()
         name = response_info["hints"][i]["food"]["label"]
         brand = response_info["hints"][i]["food"]["brand"]
         calories = response_info["hints"][i]["food"]["nutrients"]["ENERC_KCAL"]
